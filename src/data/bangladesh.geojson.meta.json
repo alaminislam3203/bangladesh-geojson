@@ -1,0 +1,19 @@
+{
+  "source": "geoBoundaries gbOpen Bangladesh ADM3 (simplified)",
+  "sourceUrl": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BGD/ADM3/geoBoundaries-BGD-ADM3_simplified.geojson",
+  "sourceMetaUrl": "https://www.geoboundaries.org/api/current/gbOpen/BGD/ADM3/",
+  "sourceLicense": "CC BY 4.0",
+  "sourceAttribution": "Boundaries © geoBoundaries (geoboundaries.org), CC BY 4.0. Underlying: Bangladesh Bureau of Statistics (BBS) / OCHA ROAP.",
+  "sourceYear": "2020",
+  "sourceCommit": "9469f09",
+  "fetchedAt": "2026-05-07T14:08:42.298Z",
+  "featureCount": 544,
+  "matchedCount": 426,
+  "unmatchedCount": 118,
+  "bbox": [
+    88.00862798600008,
+    20.590609348000044,
+    92.68025738200004,
+    26.633963686000072
+  ]
+}
