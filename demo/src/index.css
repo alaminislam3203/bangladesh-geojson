@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+}
+
+body {
+  font-family: 'InterVariable', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background: #fbfbf8;
+  background-image: radial-gradient(1200px 600px at 80% -200px, #eff7f1 0%, transparent 60%),
+    radial-gradient(800px 500px at -100px 400px, #fdf3ea 0%, transparent 60%);
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+.maplibregl-ctrl-group {
+  border: 1px solid #ececec !important;
+  box-shadow: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.maplibregl-ctrl-group button {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+::selection {
+  background: #dcefe2;
+  color: #1f4f37;
+}
+
+/* ---------- Docs prose ---------- */
+.docs-prose {
+  color: #111;
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+.docs-prose h1 {
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.docs-prose h2 {
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #ececec;
+}
+.docs-prose h3 {
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.docs-prose p {
+  margin: 0.7rem 0;
+  color: #2b2b2b;
+}
+.docs-prose a {
+  color: #3f8a5e;
+  text-decoration: underline;
+  text-decoration-color: #bee0c9;
+  text-underline-offset: 3px;
+}
+.docs-prose a:hover {
+  text-decoration-color: #3f8a5e;
+}
+.docs-prose code {
+  font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.86em;
+  background: #f5f5f0;
+  border-radius: 6px;
+  padding: 1px 6px;
+  color: #1f4f37;
+}
+.docs-prose pre {
+  font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: #f5f5f0;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  overflow: auto;
+  margin: 1rem 0;
+}
+.docs-prose pre code {
+  background: transparent;
+  padding: 0;
+  color: #111;
+}
+.docs-prose ul,
+.docs-prose ol {
+  padding-left: 1.4rem;
+  margin: 0.7rem 0;
+}
+.docs-prose li {
+  margin: 0.25rem 0;
+}
+.docs-prose ul {
+  list-style: disc;
+}
+.docs-prose ol {
+  list-style: decimal;
+}
+.docs-prose blockquote {
+  border-left: 3px solid #bee0c9;
+  background: #eff7f1;
+  padding: 0.6rem 1rem;
+  border-radius: 0 12px 12px 0;
+  color: #1f4f37;
+  margin: 1rem 0;
+  font-size: 13.5px;
+}
+.docs-prose table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 13px;
+}
+.docs-prose th,
+.docs-prose td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #ececec;
+}
+.docs-prose th {
+  font-weight: 500;
+  color: #5b5b5b;
+  background: #fbfbf8;
+}
+.docs-prose hr {
+  border: 0;
+  border-top: 1px solid #ececec;
+  margin: 2rem 0;
+}
+.docs-prose h2[id],
+.docs-prose h3[id] {
+  scroll-margin-top: 6rem;
+}
