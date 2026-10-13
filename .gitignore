@@ -1,0 +1,14 @@
+node_modules
+dist
+demo/dist
+demo/node_modules
+demo/public/bangladesh.geojson
+demo/public/bd-bazars.geojson
+demo/public/bd-major-routes.geojson
+.cache
+.DS_Store
+*.log
+.env
+.env.local
+.vscode
+.idea

@@ -1,0 +1,65 @@
+{
+  "name": "bangladesh-geojson",
+  "version": "1.0.0",
+  "description": "Open-source geographic data for Bangladesh — divisions, districts, upazilas, postcodes, and full boundary GeoJSON.",
+  "keywords": [
+    "bangladesh",
+    "geojson",
+    "geo",
+    "divisions",
+    "districts",
+    "upazilas",
+    "postcodes",
+    "bn",
+    "bangla",
+    "map"
+  ],
+  "author": "Alamin Islam <https://github.com/alaminislam3203>",
+  "license": "MIT",
+  "homepage": "https://geojson.bd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alaminislam3203/bangladesh-geojson.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alaminislam3203/bangladesh-geojson/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./boundary": "./src/data/bangladesh.geojson",
+    "./bazars": "./src/data/bd-bazars.geojson",
+    "./routes": "./src/data/bd-major-routes.geojson",
+    "./divisions": "./src/data/bd-divisions.json",
+    "./districts": "./src/data/bd-districts.json",
+    "./upazilas": "./src/data/bd-upazilas.json",
+    "./postcodes": "./src/data/bd-postcodes.json",
+    "./dhaka-city": "./src/data/dhaka-city.json"
+  },
+  "files": [
+    "dist",
+    "src/data",
+    "src/types.ts",
+    "src/index.ts",
+    "README.md",
+    "LICENSE",
+    "LICENSE-DATA"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate-data.js",
+    "build": "tsc",
+    "demo:dev": "npm --prefix demo run dev",
+    "demo:build": "npm --prefix demo run build",
+    "demo:typecheck": "npm --prefix demo run typecheck",
+    "demo:install": "npm --prefix demo install"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
