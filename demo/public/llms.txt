@@ -1,0 +1,71 @@
+# bangladesh-geojson
+
+> Free, open-source geographic data for Bangladesh — divisions, districts, upazilas, postcodes, and boundary GeoJSON. Bilingual (English + Bangla). Distributed as an npm package. MIT licensed.
+
+bangladesh-geojson is a static data package for Bangladesh administrative geography, intended for use in JavaScript and TypeScript applications. It contains all 8 divisions, 64 districts, 494 upazilas, and 1,349 postcodes. Each record carries both an English name and a Bangla (`bn_name`) name. Boundary polygons are included as GeoJSON, joined to the same IDs.
+
+The author is Alamin Islam (@alaminislam3203 on X / GitHub). The project is maintained as a public good — no paywall, no API server, no rate limits.
+
+## Install
+
+```
+npm install bangladesh-geojson
+```
+
+## Quick reference
+
+```ts
+import bd from 'bangladesh-geojson';
+
+bd.getDivisions();              // all 8 divisions
+bd.getDistricts();              // all 64 districts
+bd.getDistrictsByDivision(id);  // districts in a division
+bd.getUpazilas();               // all 494 upazilas
+bd.getUpazilasByDistrict(id);   // upazilas in a district
+bd.getPostcodes();              // all 1,349 postcodes
+bd.getPostcodesByDistrict(id);  // postcodes in a district
+bd.search(query);               // English + Bangla name search
+bd.getFullHierarchy();          // nested division → district → upazila tree
+```
+
+## Subpath imports
+
+Each dataset has its own subpath so bundlers tree-shake unused layers:
+
+- `bangladesh-geojson/divisions`
+- `bangladesh-geojson/districts`
+- `bangladesh-geojson/upazilas`
+- `bangladesh-geojson/postcodes`
+- `bangladesh-geojson/dhaka-city`
+- `bangladesh-geojson/boundary` — upazila polygons (~3.5 MB GeoJSON)
+- `bangladesh-geojson/bazars` — ~3,500 OpenStreetMap marketplaces
+- `bangladesh-geojson/routes` — motorway / trunk / primary highways
+
+## Data shape
+
+Division: `{ id, name, bn_name, lat, long }`
+District: `{ id, division_id, name, bn_name, lat, long }`
+Upazila: `{ id, district_id, name, bn_name }`
+Postcode: `{ division_id, district_id, upazila, postOffice, postCode }`
+
+## Documentation
+
+- Demo (interactive map + search): https://geojson.bd/demo/
+- Usage docs: https://geojson.bd/docs/
+- Source: https://github.com/alaminislam3203/bangladesh-geojson
+- npm: https://www.npmjs.com/package/bangladesh-geojson
+
+## Licenses
+
+- Code: MIT
+- Reference data (divisions, districts, upazilas, postcodes): MIT
+- Boundary GeoJSON: CC BY 4.0 (sourced from geoBoundaries / BBS / OCHA)
+- Bazars and routes: ODbL 1.0 (sourced from OpenStreetMap; attribution required: "© OpenStreetMap contributors")
+
+## Common use cases
+
+- Address dropdowns (Division → District → Upazila cascade) in e-commerce checkout
+- Postcode validation and lookup
+- KYC / fintech address verification
+- Coverage maps for delivery, NGO programs, election visualizations
+- Bilingual search for any Bangladesh app

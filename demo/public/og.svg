@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="topRight" cx="80%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#eff7f1" stop-opacity="1" />
+      <stop offset="60%" stop-color="#fbfbf8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="bottomLeft" cx="0%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#fdf3ea" stop-opacity="1" />
+      <stop offset="60%" stop-color="#fbfbf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#fbfbf8" />
+  <rect width="1200" height="630" fill="url(#topRight)" />
+  <rect width="1200" height="630" fill="url(#bottomLeft)" />
+
+  <!-- Top brand row -->
+  <g transform="translate(80,80)">
+    <circle cx="14" cy="14" r="14" fill="#dcefe2" />
+    <circle cx="14" cy="14" r="5" fill="#e98a85" />
+    <text x="42" y="20" font-family="Inter, sans-serif" font-size="20" fill="#111" letter-spacing="-0.4">
+      geojson<tspan fill="#3f8a5e">.bd</tspan>
+    </text>
+  </g>
+
+  <!-- Sticker -->
+  <g transform="translate(80,150) rotate(-2)">
+    <rect x="0" y="0" rx="999" ry="999" width="240" height="38" fill="#ffffff" stroke="#ececec" stroke-width="1" />
+    <circle cx="22" cy="19" r="4" fill="#7cc99c" />
+    <text x="38" y="25" font-family="Inter, sans-serif" font-size="13" letter-spacing="2" fill="#5b5b5b">
+      FREE FOR ANYONE BUILDING
+    </text>
+  </g>
+
+  <!-- Headline -->
+  <text x="80" y="320" font-family="Inter, sans-serif" font-weight="500" font-size="92" letter-spacing="-4" fill="#111">every place in</text>
+  <text x="80" y="430" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="124" fill="#111">bangladesh.</text>
+  <!-- Squiggle under bangladesh -->
+  <path d="M 80 450 Q 200 432, 320 446 T 560 444 T 770 446"
+        fill="none" stroke="#7cc99c" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Stat strip -->
+  <g font-family="'Fira Code', ui-monospace, monospace" font-size="22" fill="#111">
+    <g transform="translate(80,520)">
+      <circle cx="0" cy="-6" r="3" fill="#7cc99c" />
+      <text x="14" y="0" font-size="12" letter-spacing="1.4" fill="#8a8a8a">DIVISIONS</text>
+      <text x="0" y="32" font-size="40">8</text>
+    </g>
+    <g transform="translate(280,520)">
+      <circle cx="0" cy="-6" r="3" fill="#f4a472" />
+      <text x="14" y="0" font-size="12" letter-spacing="1.4" fill="#8a8a8a">DISTRICTS</text>
+      <text x="0" y="32" font-size="40">64</text>
+    </g>
+    <g transform="translate(490,520)">
+      <circle cx="0" cy="-6" r="3" fill="#e98a85" />
+      <text x="14" y="0" font-size="12" letter-spacing="1.4" fill="#8a8a8a">UPAZILAS</text>
+      <text x="0" y="32" font-size="40">494</text>
+    </g>
+    <g transform="translate(720,520)">
+      <circle cx="0" cy="-6" r="3" fill="#111" />
+      <text x="14" y="0" font-size="12" letter-spacing="1.4" fill="#8a8a8a">POSTCODES</text>
+      <text x="0" y="32" font-size="40">1,349</text>
+    </g>
+  </g>
+
+  <!-- Footer right -->
+  <g transform="translate(1120,580)" text-anchor="end">
+    <text x="0" y="0" font-family="'Fira Code', ui-monospace, monospace" font-size="14" fill="#8a8a8a">
+      made by alamin islam · @alaminislam3203
+    </text>
+  </g>
+</svg>
