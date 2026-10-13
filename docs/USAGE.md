@@ -61,6 +61,5 @@ That's it.
 
 ## Caveats
 
-- 12 postcodes are missing the `district_id` mapping. PRs welcome.
 - Upazilas don't have lat/long — use the parent district's coordinates.
 - The boundary file has 544 polygons; ~118 of those are Dhaka/Chittagong city thanas, not in `bd-upazilas.json`.
