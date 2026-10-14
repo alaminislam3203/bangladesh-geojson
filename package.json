@@ -19,7 +19,7 @@
   "homepage": "https://geojson.bd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alaminislam3203/bangladesh-geojson.git"
+    "url": "git+https://github.com/alaminislam3203/bangladesh-geojson.git"
   },
   "bugs": {
     "url": "https://github.com/alaminislam3203/bangladesh-geojson/issues"
@@ -54,6 +54,7 @@
   "scripts": {
     "validate": "node scripts/validate-data.js",
     "build": "tsc",
+    "prepublishOnly": "npm run build && npm run validate",
     "demo:dev": "npm --prefix demo run dev",
     "demo:build": "npm --prefix demo run build",
     "demo:typecheck": "npm --prefix demo run typecheck",

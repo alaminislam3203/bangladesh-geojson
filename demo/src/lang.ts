@@ -44,8 +44,8 @@ export const T: Record<string, { en: string; bn: string }> = {
   copy: { en: 'copy json', bn: 'JSON কপি করুন' },
   copied: { en: 'copied', bn: 'কপি হয়েছে' },
   footerLeft: {
-    en: 'made by fahim',
-    bn: 'বানিয়েছেন ফাহিম',
+    en: 'made by alamin',
+    bn: 'বানিয়েছেন আলামিন',
   },
   footerRight: {
     en: 'map tiles by openfreemap',
