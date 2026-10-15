@@ -34,7 +34,7 @@ function popupHtml(p: FeatureProps, lang: Lang) {
   const safe = (s: string) =>
     s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return `
-    <div style="font-family:Inter,system-ui,sans-serif;font-size:12px;line-height:1.35;padding:2px 4px;">
+    <div style="font-family:'Hind Siliguri',Inter,system-ui,sans-serif;font-size:12px;line-height:1.35;padding:2px 4px;">
       <div style="color:#111;letter-spacing:-0.01em;">${safe(primary)}</div>
       ${secondary ? `<div style="color:#8a8a8a;font-size:11px;">${safe(secondary)}</div>` : ''}
       ${district ? `<div style="color:#3f8a5e;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;margin-top:3px;">${safe(district)}</div>` : ''}
@@ -48,7 +48,7 @@ function bazarPopupHtml(p: { name?: string; bn_name?: string; upazila?: string; 
   const dist = p.district || '';
   const safe = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return `
-    <div style="font-family:Inter,system-ui,sans-serif;font-size:12px;line-height:1.35;padding:2px 4px;">
+    <div style="font-family:'Hind Siliguri',Inter,system-ui,sans-serif;font-size:12px;line-height:1.35;padding:2px 4px;">
       <div style="color:#c47640;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;">Bazar</div>
       <div style="color:#111;letter-spacing:-0.01em;margin-top:2px;">${safe(primary)}</div>
       ${upa || dist ? `<div style="color:#8a8a8a;font-size:11px;">${safe([upa, dist].filter(Boolean).join(' · '))}</div>` : ''}

@@ -11,6 +11,12 @@ export default function LangProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     window.localStorage.setItem('bd-geojson-lang', lang);
+    document.documentElement.lang = lang;
+    if (lang === 'bn') {
+      document.body.classList.add('font-bangla');
+    } else {
+      document.body.classList.remove('font-bangla');
+    }
   }, [lang]);
 
   return <LangContext.Provider value={{ lang, setLang }}>{children}</LangContext.Provider>;

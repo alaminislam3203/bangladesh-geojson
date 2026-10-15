@@ -32,8 +32,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"InterVariable"', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['"InterVariable"', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['"InterVariable"', 'Inter', '"Hind Siliguri"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"InterVariable"', 'Inter', '"Hind Siliguri"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        bangla: ['"Hind Siliguri"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         serif: ['"Instrument Serif"', 'ui-serif', 'Georgia', 'serif'],
         mono: ['"Fira Code"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },

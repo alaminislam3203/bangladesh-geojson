@@ -31,7 +31,7 @@ export default function Header({ active }: Props) {
           >
             github
           </a>
-          {active === 'demo' && (
+          {(active === 'demo' || active === 'home') && (
             <span className="ml-2">
               <LangToggle />
             </span>
